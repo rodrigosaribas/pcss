@@ -25,7 +25,8 @@ class UserController extends Controller
     {
         $users = User::all();
 
-        return view('teste', [
+        return view('testecontroller', [
+            'greeting' => 'Hello World!',
             'users' => $users
         ]);
     }
